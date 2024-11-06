@@ -1,0 +1,32 @@
+body {
+    background-color: #27263b;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Ensures no overflow on small screens */
+}
+
+/* Apply the background image with transparency */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../resources/body_images/galaxy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.5; /* Adjust the transparency here */
+    z-index: -1; /* Keeps the image behind other content */
+}
+
+/* Styling the main content */
+.content {
+    position: relative;
+    background-color: #ffffff; /* Solid color background for content */
+    padding: 20px;
+    z-index: 1; /* Ensure content appears above background image */
+}

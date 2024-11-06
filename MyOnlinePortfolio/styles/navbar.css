@@ -1,0 +1,75 @@
+/*navbar.css */
+.navbar {
+    width: 100%;
+    height: 50px;
+    
+    display: flex;
+    box-sizing: border-box;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #161342;
+}
+
+/* Left Navbar */
+
+.navbar_left {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+
+    box-sizing: border-box;
+}
+
+.navbar_left_textbox {
+    align-items: center; /* Vertically center the text within the div */
+    display: flex; /* Make the div a flex container */
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 10%;
+}
+
+.navbar_left_textbox_lightpulp {
+    font-family: "Gruppo", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 10px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Position the underline absolutely */
+  }
+  
+  .navbar_left_textbox_lightpulp:hover {
+    text-decoration: none; /* Remove default underline on hover */
+  }
+  
+  .navbar_left_textbox_lightpulp::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white; 
+  
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar_left_textbox_lightpulp:hover::after {
+    transform: scaleX(1);
+  }
+
+
+.navbar_mid {
+    width: 100%;
+    height: 100%;
+
+}
+.navbar_right {
+    width: 100%;
+    height: 100%;
+
+}
